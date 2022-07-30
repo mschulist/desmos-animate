@@ -1,0 +1,23 @@
+{
+    "name": "Desmos Animator",
+    "description": "Animating Laggy Desmos Animations",
+    "version": "1.0",
+    "manifest_version": 3, 
+
+    "host_permissions": [
+        "https://desmos.com/*"
+    ], 
+
+     "background" : {
+        "service_worker" : "background.js", 
+        "type": "module"
+     }, 
+      
+    "permissions": ["activeTab", "scripting"], 
+
+   "action": {
+    "default_title": "Click to view popup"
+   }
+
+  }
+
